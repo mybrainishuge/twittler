@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html>
+
   <head>
+    <title>Twittler</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300' rel='stylesheet' type='text/css'>
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <script src="data_handler.js"></script>
   </head>
+
   <body>
-    <script>
 
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
 
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
+    <!-- Header Banner -->
 
-      });
+    <header>
+      <h1 class="head-right clicky">#twittler</h1>
+    </header>
 
-    </script>
+
+
+    <!-- Compose Box -->
+
+    <section class="compose container">
+      <textarea id="twit-box" class="text-field">Compose your twit here...</textarea>
+      <div id="twit-button" class="twit clicky">Twit</div>
+    </section>
+
+
+
+    <!-- Twit Timeline -->
+
+    <section class="timeline container group">
+      <!-- Gets populated by the above script -->
+    </section>
+
+
+
+    <!-- Footer Banner -->
+
+    <img class="foot-logo-left" src="assets/images/twitter-mondo-sm.png">
+
+    <footer class="foot">
+      <h3><a target="_blank" href="http://www.theonion.com/article/fourth-graders-button-making-machine-privileges-su-210">DOG BALLS</a></h3>
+    </footer>
+    
   </body>
 </html>
