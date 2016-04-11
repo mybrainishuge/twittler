@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -129,7 +129,8 @@ footer {
   text-decoration-style: none;
 }
 .foot:hover a {
-  color: #A6C1C7;
+  /*color: #A6C1C7;*/
+  color: #2B2B2B;
 }
 .foot-logo-left {
   position: fixed;
@@ -158,7 +159,7 @@ footer {
   margin: 26px auto 46px auto;
   padding: 2px 0 32px 0;
   text-align: center;
-  position: relative;  
+  position: relative;
 }
 .tweet-head {
   font: 400 14px/10px 'Raleway', Helvetica, Arial, sans-serif;
@@ -227,7 +228,7 @@ footer {
   ========================================
 */
 
-.twit { 
+.twit {
   position: relative;
   float: right;
   text-align: center;
