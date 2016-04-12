@@ -35,8 +35,8 @@ $(document).ready(function() {
     var $time = $('<div class="tweet-head tweet-time"></div>');
     var $tweet = $('<div class="tweet group"></div>');
     $user.text('@' + tweet.user);
-    // $time.text(tweet.created_at.toLocaleString());
-    $time.text(moment().to(tweet.created_at));
+    $time.text(tweet.created_at.toLocaleString());
+    // $time.text(moment().to(tweet.created_at));
     $tweet.text(tweet.message);
     $tweet.prependTo($timeline);
     $time.prependTo($timeline);
@@ -51,8 +51,8 @@ $(document).ready(function() {
     var $time = $('<div class="tweet-head tweet-time"></div>');
     var $tweet = $('<div class="tweet group"></div>');
     $user.text('@' + tweet.user);
-    // $time.text(tweet.created_at.toLocaleString());
-    $time.text(moment().to(tweet.created_at));
+    $time.text(tweet.created_at.toLocaleString());
+    // $time.text(moment().to(tweet.created_at));
     $tweet.text(tweet.message);
     $user.appendTo($timeline);
     $user.click(viewUserTweets); // adds click behavior to username of tweet
@@ -184,8 +184,8 @@ var viewUserTweets = function() {
       var tweet = streams.users[user][index];
       var $time = $('<div class="tweet-head tweet-time"></div>');
       var $tweet = $('<div class="tweet group"></div>');
-      // $time.text(tweet.created_at.toLocaleString());
-      $time.text(moment().to(tweet.created_at));
+      $time.text(tweet.created_at.toLocaleString());
+      // $time.text(moment().to(tweet.created_at));
       $tweet.text(tweet.message);
       $time.appendTo($timeline);
       $tweet.appendTo($timeline);
@@ -201,4 +201,3 @@ var clearTwitBox = function() {
     this.value = '';
   }
 };
-
